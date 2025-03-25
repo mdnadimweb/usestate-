@@ -10,10 +10,23 @@ function App() {
     <>
           {/* maping system  */}
 
-{person.map ()=>(
+    <div className="parent">
 
-  
-)}
+   {person.map ((person,index)=>(
+
+    <div key={person.id } className="child">
+      <h2>{person.name}</h2>
+      <h2>{person.age}</h2>
+      <h2>{person.job }</h2>
+      
+
+    </div>
+   ))}
+
+
+
+
+    </div>
 
 
 
